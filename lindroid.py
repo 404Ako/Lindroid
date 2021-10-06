@@ -35,27 +35,35 @@ if os.name == "nt":
 else:
         os.system("clear")
 def menu():
-
-        print(Fore.RED+"     Welcome To Android Linux Installer")
-        time.sleep(1)
-        print(Fore.BLUE+(figlet_format("Lindroid", font = "slant")))
-        time.sleep(1)
-        print("Type help to check all installable systems!")
+        print(Fore.BLUE+"""
+                          W E L C O M E
+                 ╦    ╦  ╔╗╔  ╔╦╗  ╦═╗  ╔═╗  ╦  ╔╦╗
+                 ║    ║  ║║║   ║║  ╠╦╝  ║ ║  ║   ║║
+                 ╩═╝  ╩  ╝╚╝  ═╩╝  ╩╚═  ╚═╝  ╩  ═╩╝
+              ————————————————————————————————————————
+                 Type "help" To Check All Commands!
+""")
 def main():
-        time.sleep(1)
         inp = input(f"""
-{green}┌──{green}(\{blue}u0_a173㉿localhost{green}){green}-[{white}~{green}]
+{green}┌──{green}({blue}u0_a173㉿localhost{green}){green}-[{white}~{green}]
 └─${white} """)
         if inp == "help":
                 print(Fore.BLUE+"""
-| ============Lindroid============== |
-| help    -     shows this command   |
-| distros -     shows all systems    |
-| clear   -     clears screen        |
-| credit  -     shows credits        |
-| support -     sends support server |
-| exit    -     exits out of script  |
-| ================================== |""")
+        ╔════════════════════════════════════════════╗
+        ║                 LinDroid                   ║
+        ║════════════════════════════════════════════║
+        ║ help - Shows this command                  ║
+        ║                                            ║
+        ║ clear - Clears the screen                  ║
+        ║                                            ║
+        ║ distros - Shows all installable systems    ║
+        ║                                            ║
+        ║ credit - Sends the credit screen           ║
+        ║                                            ║
+        ║ support - Sends the Discord Server link    ║
+        ║                                            ║
+        ║ exit - Exits out of the script             ║
+        ╚════════════════════════════════════════════╝""")
                 main()
         elif inp == "exit":
                 print(Fore.YELLOW+"thanks for using lindroid :)")
@@ -72,24 +80,35 @@ def main():
                         main()
         elif inp == "credit":
                 print(Fore.BLUE+"""
-| ================================== |
-|          Made By 404Ako            |
-|         ————————————————           |
-| This project was made for the mob- |
-| le coders that can't code due to   |
-| them not having a real linux expe- |
-| rience and for the pentesters etc. |
-| ================================== |""")
+        ╔════════════════════════════════════════════╗
+        ║                 Credits                    ║
+        ║════════════════════════════════════════════║
+        ║                Lindroid                    ║
+        ║              —————————————                 ║
+        ║ This script has been made by Ahmad Aka     ║
+        ║ 404Ako                                     ║
+        ║                                            ║
+        ║ Instagram: ahmadthebean                    ║
+        ║ GitHub: 404Ako                             ║
+        ║ YouTube: Black Magic                       ║
+        ║ Discord: 404Ako#8272                       ║
+        ╚════════════════════════════════════════════╝""")
                 main()
         elif inp == "distros":
                 print(Fore.BLUE+"""
-| ====================================== |
-| 1 - Kali Linux           2 - Arch      |
-| 3 - Ubuntu               4 - Debian    |
-| 5 - Manjaro              6 - Fedora    |
-| 7 - Void                 8 - Alpine    |
-|            9 - Parrot OS               |
-| ====================================== |""")
+        ╔══════════════════════════════════════════════════════╗
+        ║                    Distributions                     ║
+        ║══════════════════════════════════════════════════════║
+        ║ 1 - Kali Linux                     2 - Arch Linux    ║
+        ║                                                      ║
+        ║ 3 - Ubuntu                         4 - Debian        ║
+        ║                                                      ║
+        ║ 5 - Manjaro                        6 - Fedora        ║
+        ║                                                      ║
+        ║ 7 - Void                           8 - Alpine        ║
+        ║                                                      ║
+        ║                  9 - Parrot OS                       ║
+        ╚══════════════════════════════════════════════════════╝""")
                 main()
 	elif inp == "1":
 		os.system("pkg update -y && pkg install wget curl proot tar -y && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Kali/kali-xfce.sh -O kali-xfce.sh && chmod +x kali-xfce.sh && bash kali-xfce.sh")
