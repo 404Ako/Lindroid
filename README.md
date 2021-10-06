@@ -1,4 +1,4 @@
-![](https://github.com/404Ako/Lindroid/blob/main/Screenshot_20211006-031544.png)
+![](https://github.com/404Ako/Lindroid/blob/main/Screenshot_20211006-154929.png)
 A Linux distro installer for termux in python3
 # Available Operating Systems
 ```
